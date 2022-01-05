@@ -1,0 +1,25 @@
+{
+    "apps": [
+        {
+            "script": "app.js",
+            "ignore_watch": [
+
+            ],
+
+            "log_file": "log/pm2_log.log",
+            "out_file": "log/pm2_out.log",
+            "error_file": "log/pm2_err.log",
+
+            "env_development": {
+                "name": "tatvasoft",
+                "SERVER_PORT": 9000,
+                "NODE_ENV": "development",
+                "DB_PROTOCOL": "mongodb",
+                "DB_HOST": "localhost",
+                "DB_USERNAME": "root",
+                "DB_PORT": "27017",
+                "JWT_SERECT": "I LOVE INDIA"
+            }
+        }
+    ]
+}
